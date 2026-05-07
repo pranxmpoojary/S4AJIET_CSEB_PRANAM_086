@@ -1,0 +1,14 @@
+public class Main {
+    public static void main(String[] args) {
+        int power = 5;
+        int ninja = 6;
+        if(power>ninja)
+        {
+            System.out.println("power is great");
+        }
+        else
+        {
+            System.out.println("Ninja is great");
+        }
+    }
+}
