@@ -1,0 +1,25 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class Main {
+    String brand,colour;
+    int volume;
+    boolean isEmpty;
+    boolean isFull;
+    boolean isOpen;
+    boolean isClosed;
+    void openCap(){
+        isClosed=false;
+        isOpen=true;
+        isFull=true;
+        isEmpty=false;
+    }
+    void drink(){
+        isClosed=false;
+        isOpen=true;
+        isFull=false;
+        isEmpty=false;
+    }
+    voidn
+    }
+}
