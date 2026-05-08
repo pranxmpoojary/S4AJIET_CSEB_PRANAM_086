@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class CandyJar {
+
+    public static void main(String[] args) {
+
+        int N = 10; // Maximum candies in jar
+        int K = 5;  // Minimum candies to keep
+
+        int candies = N; // Jar is initially full
+
+        Scanner sc = new Scanner(System.in);
+
+        // Customer input
+        int order = sc.nextInt();
+
+        // Check valid input
+        if (order > (candies - K) || order <= 0) {
+            System.out.println("INVALID INPUT");
+        } else {
+
+            // Sell candies
+            candies = candies - order;
+
+            System.out.println("Number of Candies Sold: " + order);
+
+            // Refill jar if candies become 5
+            if (candies == K) {
+                candies = N;
+            }
+
+            System.out.println("Number of Candies available: " + candies);
+        }
+
+        sc.close();
+    }
+}
